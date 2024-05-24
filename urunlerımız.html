@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müzik Dükkanım | Ürünlerimiz</title>
+    <link rel="stylesheet" href="./css/store.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@500&family=Roboto+Slab:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="center color1">Müzik Dükkanım</h1>
+        <table align="center">
+            <tr>
+                <td style="padding-right: 2cap;">
+                    <p><a href="index.html" target="_self">Ana Sayfa</a></p>
+                </td>
+                <td style="padding-right: 2cap;">
+                    <p><a href="./urunlerımız.html" target="_self">Ürünlerimiz</a></p>
+                </td>
+                <td>
+                    <p><a href="./hakkımızda.html" target="_self">Hakkımızda</a></p>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- 
+    <ol style="list-style-position: inside;" align="center" class="reddit-mono">
+        <li>
+            <img src="https://media.istockphoto.com/id/501547933/tr/foto%C4%9Fraf/classical-guitar.jpg?s=612x612&w=0&k=20&c=pnFJQuFnRORpzrv1FzzP07yqzqj5Dv2uw_BrkSmiT7I="
+                alt="Gitar" style="height: 23cap;">
+            <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+        </li>
+        <li>
+            <img src="data:image/png;base64,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"
+                alt="Gitar" style="width: 23cap;">
+            <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+        </li>
+        <li>
+            <img src="https://media.istockphoto.com/id/501547933/tr/foto%C4%9Fraf/classical-guitar.jpg?s=612x612&w=0&k=20&c=pnFJQuFnRORpzrv1FzzP07yqzqj5Dv2uw_BrkSmiT7I="
+                alt="Gitar" style="height: 23cap;">
+            <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+        </li>
+        <li>
+            <img src="https://media.istockphoto.com/id/501547933/tr/foto%C4%9Fraf/classical-guitar.jpg?s=612x612&w=0&k=20&c=pnFJQuFnRORpzrv1FzzP07yqzqj5Dv2uw_BrkSmiT7I="
+                alt="Gitar" style="height: 23cap;">
+            <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+        </li>
+        <li>
+            <img src="https://media.istockphoto.com/id/501547933/tr/foto%C4%9Fraf/classical-guitar.jpg?s=612x612&w=0&k=20&c=pnFJQuFnRORpzrv1FzzP07yqzqj5Dv2uw_BrkSmiT7I="
+                alt="Gitar" style="height: 23cap;">
+            <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+        </li>
+        <li>
+            <img src="https://media.istockphoto.com/id/501547933/tr/foto%C4%9Fraf/classical-guitar.jpg?s=612x612&w=0&k=20&c=pnFJQuFnRORpzrv1FzzP07yqzqj5Dv2uw_BrkSmiT7I="
+                alt="Gitar" style="height: 23cap;">
+            <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+        </li>
+        <li>
+            <img src="https://media.istockphoto.com/id/501547933/tr/foto%C4%9Fraf/classical-guitar.jpg?s=612x612&w=0&k=20&c=pnFJQuFnRORpzrv1FzzP07yqzqj5Dv2uw_BrkSmiT7I="
+                alt="Gitar" style="height: 23cap;">
+            <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+        </li>
+    </ol>
+     -->
+    <section>
+        <h2 class="center color1">Ürünlerimiz</h2>
+        <table align="center" style="border-collapse: collapse;" class="text-font">
+            <tr align="center">
+                <td style="justify-content: center;">
+                    <img src="https://media.istockphoto.com/id/501547933/tr/foto%C4%9Fraf/classical-guitar.jpg?s=612x612&w=0&k=20&c=pnFJQuFnRORpzrv1FzzP07yqzqj5Dv2uw_BrkSmiT7I="
+                        alt="Gitar" style="height: 23cap;">
+                    <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+                </td>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNjat-m_yztd3NC6fa5sMnNuSNJQPKY7DJ6ksQxgvqQ&s"
+                        alt="Gitar" style="height: 23cap;">
+                    <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+                </td>
+                <td>
+                    <img src="https://productimages.hepsiburada.net/s/2/375-375/9558016000050.jpg" alt="Gitar"
+                        style="height: 23cap; align-items: normal">
+                    <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+                </td>
+            </tr>
+            <tr align="center">
+                <td style="justify-content: center;">
+                    <img src="https://www.do-re.com.tr/stentor-1400-c-student-i-keman-3-4-45daeb33e669f6ebf08a57e9b1e71fcf-6a625d35710e952c94b03a755ed04a1d-max-pp.jpg"
+                        alt="Gitar" style="height: 23cap;">
+                    <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+                </td>
+                <td>
+                    <img src="https://www.do-re.com.tr/yamaha-gb1-akustik-kuyruklu-piyano-parlak-siyah-cce51c1f066f575b7d9a21f9f985bb02-12622d3632fb8eb8cb92c2028a5434e8-max-pp.jpg"
+                        alt="Gitar" style="height: 23cap;">
+                    <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+                </td>
+                <td>
+                    <img src="https://www.do-re.com.tr/yamaha-cfx-akustik-tam-kuyruklu-piyano-parlak-siyah-25f9176173753a8685b1747088fdc728-c46ee364091554191b4678445db9c71f-max-pp.jpg"
+                        alt="Gitar" style="height: 23cap; align-items: normal">
+                    <p>Fender Masterbuilt 59 Stratocaster <strong>6000₺</strong></p>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+
+</html>
